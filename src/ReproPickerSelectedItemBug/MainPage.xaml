@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReproPickerSelectedItemBug.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="ThePicker" />
+            <Button Text="Change selected item" Clicked="ChangeItem_Clicked" />
+            <Button Text="Change selected index" Clicked="ChangeIndex_Clicked"/>
+            <Button Text="Check value" Clicked="Check_Clicked"/>
+            <Label x:Name="Result"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
